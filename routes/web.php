@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//
+Route::get('/admin/login', 'Admin\AuthAdminController@showLogin')->name('showlogin');
 // route dashboard
 Route::get('/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard');
 // route pasien
