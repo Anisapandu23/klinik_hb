@@ -24,13 +24,14 @@ Route::group(['prefix' => 'admin'], function () {
     Route::post('/login', 'Admin\AuthAdminController@login')->name('admin.login');
     Route::get('/logout', 'Admin\AuthAdminController@logout')->name('admin.logout');
     Route::get('/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard')->middleware('CekLoginAuth');
-    Route::get('/pasien', 'Admin\PasienController@index')->name('pasien.index');
-    Route::get('/create_pasien', 'Admin\PasienController@create')->name('pasien.create');
-    Route::get('/rekamMedik', 'Admin\RekamMedikController@index')->name('rekamMedik.index');
-    Route::get('/obat', 'Admin\ObatController@index')->name('obat.index');
-    Route::get('/create_obat', 'Admin\ObatController@create')->name('obat.create');
+    Route::get('/pasien', 'Admin\PasienController@index')->name('pasien.index')->middleware('CekLoginAuth');;
+    Route::get('/create_pasien', 'Admin\PasienController@create')->name('pasien.create')->middleware('CekLoginAuth');;
+    Route::get('/rekamMedik', 'Admin\RekamMedikController@index')->name('rekamMedik.index')->middleware('CekLoginAuth');;
+    Route::get('/obat', 'Admin\ObatController@index')->name('obat.index')->middleware('CekLoginAuth');;
+    Route::get('/create_obat', 'Admin\ObatController@create')->name('obat.create')->middleware('CekLoginAuth');;
 });
 
 Route::group(['prefix' => 'kasir'], function () {
-
+    Route::get('/login', 'Kasir\AuthKasirController@showLogin')->name('showloginkasir');
+    Route::get('/dashboard', 'Kasir\DashboardController@index')->name('kasir.dashboard');
 });
