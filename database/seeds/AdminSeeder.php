@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Admin;
+use Illuminate\Support\Facades\DB;
 
 class AdminSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        Admin::create([
+        DB::table('admin')->insert([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
             'username' => 'admin',
