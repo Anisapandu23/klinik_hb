@@ -27,6 +27,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/pasien', 'Admin\PasienController@index')->name('pasien.index')->middleware('CekLoginAuth');;
     Route::get('/create_pasien', 'Admin\PasienController@create')->name('pasien.create')->middleware('CekLoginAuth');;
     Route::get('/rekamMedik', 'Admin\RekamMedikController@index')->name('rekamMedik.index')->middleware('CekLoginAuth');;
+    Route::get('/create_rekamMedik', 'Admin\RekamMedikController@create')->name('rekamMedik.create')->middleware('CekLoginAuth');;
     Route::get('/obat', 'Admin\ObatController@index')->name('obat.index')->middleware('CekLoginAuth');;
     Route::get('/create_obat', 'Admin\ObatController@create')->name('obat.create')->middleware('CekLoginAuth');;
 });
