@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tanggal Lahir</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Tanggal Kelahiran">
+                                        <input type="date" id="disabledTextInput" class="form-control" placeholder="Masukkan Tanggal Kelahiran">
                                     </div>
                                     <div class="mb-3">
                                         <label for="disabledSelect" class="form-label">Jenis Kelamin</label>
@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Alamat Lengkap</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Alamat Lengkap">
+                                        <textarea type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Alamat Lengkap"></textarea>
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Usia</label>
