@@ -22,6 +22,7 @@ class CreatePasienTable extends Migration
             $table->date('tanggal_lahir');
             $table->char('jenis_kelamin', 9);
             $table->text('alamat');
+            $table->char('no_hp');
             $table->char('usia', 2);
             $table->char('golongan_darah', 2);
             $table->timestamps();

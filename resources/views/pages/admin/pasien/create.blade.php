@@ -14,11 +14,12 @@
                 <div class="card-body">
                     <div class="table">
                         <table class="table">
-                            <form>
+                        <form method="post" action="{{route('pasien.store')}}">
+                             @csrf
                                 <fieldset enable>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Kategori Pasien</label>
-                                        <select id="disabledSelect" class="form-control">
+                                        <select name="kategori_pasien" id="disabledSelect" class="form-control {{$errors->has('kategori_pasien') ? 'is-invalid':''}}">
                                             <option>...</option>
                                             <option>Pasien Umum</option>
                                             <option>Pasien Civitas PHB</option>
@@ -26,23 +27,23 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nama</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                                        <input name="nama" type="text" id="disabledTextInput" class="form-control {{$errors->has('nama') ? 'is-invalid':''}}" placeholder="">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="TextInput" class="form-label">Nomor Identitas</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                                        <label for="TextInput" class="form-label" max-lenght="13">Nomor Identitas</label>
+                                        <input name="no_identitas" type="number" id="disabledTextInput" class="form-control {{$errors->has('no_identitas') ? 'is-invalid':''}}" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tempat Lahir</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                                        <input name="tempat_lahir" type="text" id="disabledTextInput" class="form-control {{$errors->has('tempat_lahir') ? 'is-invalid':''}}" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tanggal Lahir</label>
-                                        <input type="date" id="disabledTextInput" class="form-control" placeholder="">
+                                        <input name="tanggal_lahir" type="date" id="disabledTextInput" class="form-control {{$errors->has('tanggal_lahir') ? 'is-invalid':''}}" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="disabledSelect" class="form-label">Jenis Kelamin</label>
-                                        <select id="disabledSelect" class="form-control">
+                                        <select name="jenis_kelamin" id="disabledSelect" class="form-control{{$errors->has('jenis_kelamin') ? 'is-invalid':''}}">
                                             <option>...</option>
                                             <option>Laki-laki</option>
                                             <option>Perempuan</option>
@@ -50,37 +51,35 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Alamat Lengkap</label>
-                                        <textarea type="text" id="disabledTextInput" class="form-control" placeholder=""></textarea>
+                                        <textarea name="alamat" type="text" id="disabledTextInput" class="form-control {{$errors->has('alamat') ? 'is-invalid':''}}" placeholder=""></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="TextInput" class="form-label">No. Hp</label>
+                                        <input name="no_hp" type="number" id="disabledTextInput" class="form-control {{$errors->has('alamat') ? 'is-invalid':''}}" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Usia</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                                        <input name="usia" type="number" id="disabledTextInput" class="form-control {{$errors->has('usia') ? 'is-invalid':''}}" placeholder="">
                                     </div>
                                     <div class="mb-2">
                                         <label for="disabledSelect" class="form-label">Golongan Darah</label>
-                                        <div class="col-12 ml-2">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    A
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    B
-                                                </label>
-                                            </div>
-                                        </div>
+                                        <select name="golongan_darah" id="disabledSelect" class="form-control{{$errors->has('golongan_darah') ? 'is-invalid':''}}">
+                                            <option>...</option>
+                                            <option>A</option>
+                                            <option>B</option>
+                                            <option>O</option>
+                                            <option>AB</option>
+                                        </select>
                                     </div>
-                                    <button type="submit" class="btn btn-primary float-right btn-md">Simpan</button>
-                                    <button class="btn btn-warning float-right btn-md mr-2" type="button"
-                            onclick="history.back()">Batal</button>
-                                </fieldset>
-                            </form>
-                        </table>
                     </div>
                 </div>
+                <button type="submit" class="btn btn-primary float-right btn-md">Simpan</button>
+                <button class="btn btn-warning float-right btn-md mr-2" type="button" onclick="history.back()">Batal</button>
+                </fieldset>
+                </form>
+                </table>
             </div>
         </div>
-        @endsection
+    </div>
+</div>
+@endsection
