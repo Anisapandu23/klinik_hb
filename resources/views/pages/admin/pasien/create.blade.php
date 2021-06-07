@@ -17,8 +17,8 @@
                             <form>
                                 <fieldset enable>
                                     <div class="mb-3">
-                                        <label for="disabledSelect" class="form-label">Kategori Pasien</label>
-                                        <select id="disabledSelect" class="form-select">
+                                        <label for="TextInput" class="form-label">Kategori Pasien</label>
+                                        <select id="disabledSelect" class="form-control">
                                             <option>...</option>
                                             <option>Pasien Umum</option>
                                             <option>Pasien Civitas PHB</option>
@@ -26,23 +26,23 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nama</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Nama">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nomor Identitas</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="KTP/SIM">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tempat Lahir</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Kota Kelahiran">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tanggal Lahir</label>
-                                        <input type="date" id="disabledTextInput" class="form-control" placeholder="Masukkan Tanggal Kelahiran">
+                                        <input type="date" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="disabledSelect" class="form-label">Jenis Kelamin</label>
-                                        <select id="disabledSelect" class="form-select">
+                                        <select id="disabledSelect" class="form-control">
                                             <option>...</option>
                                             <option>Laki-laki</option>
                                             <option>Perempuan</option>
@@ -50,31 +50,32 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Alamat Lengkap</label>
-                                        <textarea type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Alamat Lengkap"></textarea>
+                                        <textarea type="text" id="disabledTextInput" class="form-control" placeholder=""></textarea>
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Usia</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Usia">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-2">
                                         <label for="disabledSelect" class="form-label">Golongan Darah</label>
-                                        <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                                A
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                B
-                                            </label>
-                                        </div>
-                                        
+                                        <div class="col-12 ml-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    A
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    B
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary float-right btn-md">Simpan</button>
+                                    <button class="btn btn-warning float-right btn-md mr-2" type="button"
+                            onclick="history.back()">Batal</button>
                                 </fieldset>
                             </form>
                         </table>

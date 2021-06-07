@@ -18,34 +18,36 @@
                                 <fieldset enable>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Kode Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Kode Obat">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nama Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Nama Obat">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Jenis Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Jenis Obat">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tanggal Kadaluwarsa Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Tanggal">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Harga Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Harga Obat">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">harga Jual Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Harga Jual Obat">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Jumlah Ketersediaan</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Jumlah Ketersediaan">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                     </div>
                     <button type="submit" class="btn btn-primary float-right btn-md">Simpan</button>
+                    <button class="btn btn-warning float-right btn-md mr-2" type="button"
+                            onclick="history.back()">Batal</button>
                     </fieldset>
                     </form>
                     </table>

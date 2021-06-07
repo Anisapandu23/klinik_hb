@@ -3,7 +3,7 @@
           <div class="row">
             <nav class="footer-nav">
               <ul>
-                <li>
+                <!-- <li>
                   <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>
                 </li>
                 <li>
@@ -11,7 +11,7 @@
                 </li>
                 <li>
                   <a href="https://www.creative-tim.com/license" target="_blank">Licenses</a>
-                </li>
+                </li> -->
               </ul>
             </nav>
             <div class="credits ml-auto">
@@ -19,7 +19,7 @@
                 ©
                 <script>
                   document.write(new Date().getFullYear())
-                </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                </script>, Made With By Klinik HB Tegal
               </span>
             </div>
           </div>

@@ -32,11 +32,13 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- Navbar -->
   @include('templates.partials.admin._navbar')
   <!-- End Navbar -->
-
+  
+                  
 
   {{--start main--}}
   @yield('content')
   {{--end main--}}
+
 
   @include('templates.partials.admin._footer')
   </div>
@@ -47,5 +49,6 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- script -->
   @include('templates.partials.admin._script')
   <!-- end script -->
+
 </body>
 </html>

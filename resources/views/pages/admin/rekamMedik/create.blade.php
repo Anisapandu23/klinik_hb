@@ -18,27 +18,27 @@
                                 <fieldset enable>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">No. Rekam Medis</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan No. Rekam Medis">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nama Pasien</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Nama Pasien">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nomor HP</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Nomor HP">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Usia</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Usia">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Nama Dokter</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Nama Dokter">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="disabledSelect" class="form-label">Jenis Pemeriksaan</label>
-                                        <select id="disabledSelect" class="form-select">
+                                        <select id="disabledSelect" class="form-control">
                                             <option>...</option>
                                             <option>Pasien Umum</option>
                                             <option>Pasien Civitas PHB</option>
@@ -46,18 +46,20 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Keluhan</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Keluhan Pasien">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Tindakan</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Tindakan Pasien">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                                     <div class="mb-3">
                                         <label for="TextInput" class="form-label">Resep Obat</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Masukkan Resep Obat">
+                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="">
                                     </div>
                     </div>
                     <button type="submit" class="btn btn-primary float-right btn-md">Simpan</button>
+                    <button class="btn btn-warning float-right btn-md mr-2" type="button"
+                            onclick="history.back()">Batal</button>
                     </fieldset>
                     </form>
                     </table>
