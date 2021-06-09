@@ -86,7 +86,8 @@ class PasienController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = Pasien::find($id);
+        return view('pages.admin.pasien.detail', compact('data'));
     }
 
     /**
