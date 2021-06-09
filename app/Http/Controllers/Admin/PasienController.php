@@ -120,7 +120,7 @@ class PasienController extends Controller
      */
     public function destroy($id)
     {
-        $data = Pasien::find($id);
+        $data = Pasien::findOrFail($id);
         $data->delete();
         return redirect()->route('pasien.index');
     }

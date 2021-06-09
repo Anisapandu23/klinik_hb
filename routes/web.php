@@ -24,7 +24,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::post('/login', 'Admin\AuthAdminController@login')->name('admin.login');
     Route::get('/logout', 'Admin\AuthAdminController@logout')->name('admin.logout');
     Route::get('/dashboard', 'Admin\DashboardController@index')->name('admin.dashboard')->middleware('CekLoginAuth');
-    
+
     Route::get('/pasien', 'Admin\PasienController@index')->name('pasien.index')->middleware('CekLoginAuth');
     Route::get('/pasien/create', 'Admin\PasienController@create')->name('pasien.create')->middleware('CekLoginAuth');
     Route::post('/pasien/store', 'Admin\PasienController@store')->name('pasien.store')->middleware('CekLoginAuth');
